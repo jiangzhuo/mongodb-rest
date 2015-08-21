@@ -13,7 +13,7 @@ var path = require("path");
 var express = require('express');
 var https = require('https');
 var extend = require("extend");
-var bodyPaser = require('body-parser');
+var bodyParser = require('body-parser');
 
 //
 // Default logger to use, if none is passed in.
