@@ -99,7 +99,8 @@ module.exports = {
     var app = express();
     require('express-csv');
 
-    app.use(require('body-parser')());
+    app.use(bodyParser.urlencoded());
+    app.use(bodyParser.json());
 
     if (config.humanReadableOutput) {
       app.set('json spaces', 4);
